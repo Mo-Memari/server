@@ -20,7 +20,7 @@ void WriteFile()
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () =>
+app.MapGet("/file.txt", () =>
 {
     WriteFile();
     return "server app";
